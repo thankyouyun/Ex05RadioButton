@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.goodyun.ex05radiobutton.MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <RadioButton
+            android:id="@+id/rb_kor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KOREA"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/rb_china"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="China"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_USA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USA"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3.5"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+
+        android:stepSize="0.5"
+        />
+
+</LinearLayout>
